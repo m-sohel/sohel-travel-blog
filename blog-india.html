@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colors & Chaos: My First Time in India</title>
+
+  <!-- INTERNAL CSS START -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background-color: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #ff9900;
+    }
+
+    .full-post {
+      max-width: 850px;
+      margin: 3rem auto;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .full-post h1 {
+      font-size: 2.5rem;
+      margin: 1.5rem 1.5rem 0.5rem;
+      color: #222;
+    }
+
+    .post-meta {
+      font-size: 0.95rem;
+      color: #777;
+      margin: 0 1.5rem 1.5rem;
+      display: block;
+    }
+
+    .post-banner {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .post-body {
+      padding: 1.5rem;
+    }
+
+    .post-body p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .post-body strong {
+      color: #111;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 0 1.5rem 2rem;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #004e94;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+
+      .full-post h1 {
+        font-size: 2rem;
+      }
+
+      .post-body {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <!-- INTERNAL CSS END -->
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SOHEL</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="destinations.html" class="active">Destinations Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="full-post">
+    <h1>Colors & Chaos: My First Time in India</h1>
+    <span class="post-meta">By Sohel • Jan 2024</span>
+    <img src="images/jaipur.jpg" alt="India" class="post-banner" />
+
+    <div class="post-body">
+      <p>India — a land of ancient rhythms, modern madness, and spiritual depth. Though born here, this journey through its heartland was my first time seeing it as a traveler. Every second, every step, felt like it had something to say — loud, vibrant, unfiltered.</p>
+
+      <p>I began in <strong>Delhi</strong>, where history and chaos collide. The Red Fort loomed proud, while the buzzing Chandni Chowk alleyways hit me with a storm of smells — cardamom, jalebi, sizzling samosas. Street vendors served piping hot parathas, and the noise was almost musical.</p>
+
+      <p><strong>Varanasi</strong> came next — a place where life and death dance together along the banks of the Ganges. Watching the Ganga Aarti, flames swirling in the night, the river reflecting gold — I felt something ancient awaken inside me. Here, spirituality wasn't in temples, it was in the air.</p>
+
+      <p>In <strong>Jaipur</strong>, Rajasthan’s capital of pink, I wandered through palaces and forts that whispered royal secrets. Amber Fort’s mirror halls glowed in the morning light. At Hawa Mahal, the breeze carried tales of queens. And the bazaars? A riot of bangles, spices, and handwoven dreams.</p>
+
+      <p>I took the train to <strong>Agra</strong> — crowded, bumpy, but unforgettable. The <em>Taj Mahal</em> truly earns its reputation. It’s not just a monument, it’s a poem carved in marble. I spent hours there, in silence, letting it speak.</p>
+
+      <p>But India is not just places. It’s people. A tea seller in Delhi chatted with me like an old friend. In Jaipur, a local artist invited me home to see his miniature paintings. In Varanasi, a priest gave me his blessing without asking for a rupee. Hospitality is a way of life here.</p>
+
+      <p><strong>What I Learned:</strong> India teaches patience, gratitude, and openness. It tests your limits and rewards you with unmatched richness — of culture, of spirit, of connection.</p>
+
+      <p><strong>Travel Tips:</strong></p>
+      <ul>
+        <li>Always carry bottled water.</li>
+        <li>Eat where the locals eat — it's fresher and safer.</li>
+        <li>Respect local customs — cover up at religious sites.</li>
+        <li>Embrace the unexpected. That’s where the magic lies.</li>
+      </ul>
+
+      <p>This trip didn’t just change my travel perspective — it changed me. India, in all its colors and chaos, became a mirror. I saw not just a country, but parts of myself I’d never met before.</p>
+    </div>
+
+    <a href="blog.html" class="back-link">← Back to Blog</a>
+  </section>
+
+</body>
+</html>

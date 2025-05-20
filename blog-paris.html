@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paris on Foot: Baguettes, Boulevards & Bliss</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background-color: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #ff9900;
+    }
+
+    .full-post {
+      max-width: 850px;
+      margin: 3rem auto;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .full-post h1 {
+      font-size: 2.5rem;
+      margin: 1.5rem 1.5rem 0.5rem;
+      color: #222;
+    }
+
+    .post-meta {
+      font-size: 0.95rem;
+      color: #777;
+      margin: 0 1.5rem 1.5rem;
+      display: block;
+    }
+
+    .post-banner {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .post-body {
+      padding: 1.5rem;
+    }
+
+    .post-body p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .post-body strong {
+      color: #111;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 0 1.5rem 2rem;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #004e94;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+
+      .full-post h1 {
+        font-size: 2rem;
+      }
+
+      .post-body {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SOHEL</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="destinations.html" class="active">Destinations Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="full-post">
+    <h1>Paris on Foot: Baguettes, Boulevards & Bliss</h1>
+    <span class="post-meta">By Sohel • Mar 2024</span>
+    <img src="images/paris2.jpg" alt="Paris" class="post-banner" />
+
+    <div class="post-body">
+      <p>Paris is not just the Eiffel Tower. It’s the scent of warm butter wafting from a boulangerie at sunrise, the rustle of newspapers in a quiet café, and the golden hue of evening light on stone façades. My journey through Paris was not driven by a checklist of landmarks, but by wandering — with open eyes and a ready heart.</p>
+
+      <p>I chose to walk. From Montmartre’s winding hills to the Latin Quarter’s cobbled lanes, every step brought new beauty. I began each day with a croissant from a local bakery and wandered aimlessly — letting the city unfold its stories block by block.</p>
+
+      <p>In Le Marais, I found vintage boutiques and falafel stands that drew long queues. A violinist played beneath an ivy-covered arch, and time seemed to freeze. In Saint-Germain, bookstores beckoned, and poets still sat in cafés, scribbling thoughts into Moleskines. I spent hours in Shakespeare & Co., reading passages from Hemingway and watching the Seine shimmer just beyond the window.</p>
+
+      <p>I visited museums, yes — the Louvre, the Orsay — but it was the street art in Belleville and the laughter of strangers at a picnic on Canal Saint-Martin that truly stayed with me. The Eiffel Tower lit up the sky each night, but the magic was in simpler places: a back alley patisserie or an old woman feeding birds outside her apartment window.</p>
+
+      <p><strong>Travel Tips:</strong></p>
+      <ul>
+        <li>Start early — the city is quiet and magical before 9 a.m.</li>
+        <li>Learn a few basic French phrases — Parisians appreciate the effort.</li>
+        <li>Buy a baguette, cheese, and wine, and picnic at <strong>Champ de Mars</strong> — the Eiffel Tower makes the perfect backdrop.</li>
+        <li>Don't over-plan. Let the city surprise you — that's when Paris is at its best.</li>
+      </ul>
+
+      <p>Walking Paris gave me more than photos — it gave me presence. And in that presence, I found the city not just as a destination, but as a feeling. A rhythm. A romance. One I’ll return to again and again — on foot, always.</p>
+    </div>
+
+    <a href="blog.html" class="back-link">← Back to Blog</a>
+  </section>
+
+</body>
+</html>

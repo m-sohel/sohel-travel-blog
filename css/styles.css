@@ -1,0 +1,282 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #1d1d1d;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: orange;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 40px;
+  background: url('../images/dubai.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background: orange;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #e08a00;
+}
+
+/* Image Grid */
+.image-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Quote Section */
+.quote {
+  padding: 50px 30px;
+  background: #fff5e6;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #444;
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  font-style: normal;
+  color: orange;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* CSS for Places */
+
+.page-title {
+  padding: 60px 20px 30px;
+  text-align: center;
+  background: #fffaf0;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.page-title p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.places-container {
+  padding: 40px 20px 60px;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 50px;
+}
+
+.place-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  padding: 25px;
+}
+
+.place-card h2 {
+  margin-bottom: 10px;
+  color: #ff6600;
+}
+
+.place-card p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+/* CSS for Blog */
+
+.blog-posts {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 40px;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.post p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.post-meta {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.post .read-more {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ff6600;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post .read-more:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*CSS for all Blog Post*/
+
+

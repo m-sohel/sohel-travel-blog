@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Roadie Travel Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .nav-links li a.active {
+      border-bottom: 2px solid #f9c74f;
+    }
+
+    .gallery {
+      padding: 40px 5%;
+      text-align: center;
+    }
+
+    .gallery h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SOHEL</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+         <li><a href="destinations.html" class="active">Destinations Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <h1>Travel Memories</h1>
+    <div class="image-grid">
+      <img src="images/santorini-sunset.jpg" alt="Sunset in Santorini" />
+      <img src="images/taj.jpg" alt="Taj Mahal in India" />
+      <img src="images/paris-street.jpg" alt="Streets of Paris" />
+      <img src="images/balir-rice.jpg" alt="Bali Rice Terraces" />
+      <img src="images/blue-city.jpg" alt="Blue city of Chefchaouen" />
+      <img src="images/eiffel-tower-night.jpg" alt="Eiffel Tower at night" />
+    </div>
+  </section>
+
+</body>
+</html>
